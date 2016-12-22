@@ -1,0 +1,15 @@
+<ion-view title="Fish" id="page2">
+  <ion-content padding="true" class="has-header">
+    <ion-list id="fish-list4">
+       <ion-list show-delete="data.showDelete">
+        <ion-item ng-repeat="item in items" 
+                  item="item"
+                  ng-click="showMembro(item)" class="item-remove-animate">
+          {{ item.name |limitTo: 32 }}{<img src={item.img}} width="7%" height="7%" align="right">
+          <d ion-show>
+        </ion-item>
+
+      </ion-list>
+    </ion-list>
+  </ion-content>
+</ion-view>
